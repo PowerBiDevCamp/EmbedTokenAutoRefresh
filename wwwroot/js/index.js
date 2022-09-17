@@ -61,8 +61,8 @@ $(function () {
     console.log(statusMessage);
     $("#expiration").text(statusMessage);
 
-    // refresh embed token two minutes before it expires
-    if (secondsToExpire < (590)) {
+    // refresh embed token five minutes before it expires
+    if (secondsToExpire < ( 60 * 5 )) { 
       refreshEmbedToken();
     }
 
@@ -85,7 +85,7 @@ $(function () {
   report.on("rendered", function () {
     console.log("Report render successful");
 
-    setInterval(checkEmbedToken, 2000);
+    setInterval(checkEmbedToken, 5000);
   });
 
   // Clear any other error handler events
