@@ -1,0 +1,33 @@
+﻿@model EmbedTokenAutoRefresh.Models.ReportEmbedData
+
+<div id="pageWidth">
+
+  <div id="banner">
+    <span id="appTitle">Embed Token Auto-refresh Demo</span>    
+    <input type="button" id="fullscreen" value="Full Screen" />
+    <span id="expiration"></span>
+  </div>
+
+  <div id="content-body">
+    <div id="report-container"></div>
+  </div>
+
+</div>
+
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/powerbi-client/dist/powerbi.min.js"></script>
+
+<script>
+
+  var ReportEmbedData = {
+      ReportId: "@Model.ReportId",
+      EmbedUrl: "@Model.EmbedUrl",
+      EmbedToken: "@Model.EmbedToken",
+      EmbedTokenExpiration: "@Model.EmbedTokenExpiration"
+  };
+
+  console.log("Got here");
+
+</script>
+
+<script src="js/index.js"></script>

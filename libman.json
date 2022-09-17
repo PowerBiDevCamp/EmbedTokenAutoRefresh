@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "jsdelivr",
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "dist/jquery.min.js",
+        "dist/jquery.min.map",
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "powerbi-client@2.21.1",
+      "destination": "wwwroot/lib/powerbi-client/",
+      "files": [
+        "dist/powerbi.min.js",
+        "LICENSE.txt"
+      ]
+    }
+  ]
+}
